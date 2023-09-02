@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+inline double power(double base,int exponent)
+{
+    double result=1;
+    for(int i=1;i<=exponent;i++)
+    {
+        result=result*base;
+    }
+    return result;
+
+}
+int main()
+{
+    double base;
+    int exponent;
+    double result;
+    cout<<"Enter the base:"<<endl;
+    cin>>base;
+    cout<<"Enter the exponent:"<<endl;
+    cin>>exponent;
+    result=power(base,exponent);
+    cout<<"Result:"<<result<<endl;
+    return 0;
+
+}
