@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+inline int binaryconverter(int d)
+{
+    if(d>1)
+    {
+        binaryconverter(d/2);
+    }
+    cout<<" "<<d%2;
+}
+int main()
+{
+    int d;
+    cout<<"Input a decimal value:";
+    cin>>d;
+    cout<<"Binary Value is :"<<endl;
+    binaryconverter(d);
+    return 0;
+}
