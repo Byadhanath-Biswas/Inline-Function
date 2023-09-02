@@ -1,0 +1,19 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+inline double circle_area(double radius)
+{
+    double area;
+    area=3.1416*radius*radius;
+    return area;
+
+}
+int main()
+{
+    double radius;
+    cout<<"Enter the value of radius:"<<endl;
+    cin>>radius;
+    double area=circle_area(radius);
+    cout<<fixed<<setprecision(3)<<"The area of the circle is:"<<area<<endl;
+    return 0;
+}
