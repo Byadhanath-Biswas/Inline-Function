@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+inline void displaycube(int &n)
+{
+    int i,cube;
+    for(i=1;i<=n;i++)
+    {
+       cube=i*i*i;
+        cout<<"cube of "<<i<<": "<<cube<<endl;
+    }
+}
+int main()
+{
+    int num;
+    cout<<"Input the Integer:";
+    cin>>num;
+    displaycube(num);
+    return 0;
+}
